@@ -21,7 +21,7 @@ function btnClick(objeto) { //quando houver um clique as funções poderão ser 
   if (me == "=") { //caso o usuário clique na tecla igual, as operações serão feitas, e o resultado será mostrado na tela
     switch (operaçao) {
       case "+":
-        res = parseFloat(operador1) + parseFloat(operador2);
+        res = parseFloat(operador1) + parseFloat(operador2);//os números serão passados como strings para esta operação, portanto usamos o parseFloat para transformar esses valores em números
         reset();
         break;
       case "-":
@@ -41,8 +41,8 @@ function btnClick(objeto) { //quando houver um clique as funções poderão ser 
         reset();
         break;
     }
-    disp.value = res.toString(); //irá mudar o display(resultado atual) com a resposta final
-    estado = 1;
+    disp.value = res.toString(); //com o parseFloat a resposta será de caráter numérico, e então usamos o toString para mostrar o resultado como string e exibir no display
+    estado = 1;                  //após completar a etapa da conta, a calculadora volta ao seu estado inicial de poder receber seu primeiro valor
     ac.value = "C";
     return;
   }
