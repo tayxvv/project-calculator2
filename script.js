@@ -43,6 +43,7 @@ function btnClick(objeto) { //quando houver um clique as funções poderão ser 
     }
     disp.value = res.toString(); //com o parseFloat a resposta será de caráter numérico, e então usamos o toString para mostrar o resultado como string e exibir no display
     estado = 1;                  //após completar a etapa da conta, a calculadora volta ao seu estado inicial de poder receber seu primeiro valor
+    operador1 = res.toString();
     ac.value = "C";
     return;
   }
