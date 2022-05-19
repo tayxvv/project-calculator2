@@ -1,0 +1,151 @@
+:root{
+    --gray: #9d9b9e;
+    --orange: #fd950e;
+    --gray-dark: #302e31;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-weight: 400;
+    text-decoration: none;
+    outline: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.mainApp{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    height: 80vh;
+    margin-top: 100px;
+    flex-direction: row;
+}
+
+input{
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    margin: 7px;
+    color: white;
+    width: 10vw;
+    height: 10vh;
+    width:70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 0px;
+    background-color: var(--gray-dark);
+    font-size: 40px;
+    
+}
+
+input{
+    cursor: pointer;
+}
+
+#display{
+    background-color: black;
+    color: white;
+    width: 330px;
+    height: 100px;
+    font-size: 50px;
+    border-radius: 0%;
+    cursor:text;
+}
+
+#btnClear, #btnNegative, #btnPercentage{
+    background-color:#9d9b9e;
+    color:black;
+    font-size: 30px;
+}
+
+#btnDiv, #btnMul, #btnSub, #btnSoma, #btnIgual{
+    background-color: #fd950e;
+    color:aliceblue;
+}
+#btnSoma:focus{
+    background-color: rgba(245, 239, 239, 0.808);
+    color: #fd950e;
+    transition: background .50s;
+}
+#btnDiv:focus{
+    background-color: rgba(245, 239, 239, 0.808);
+    color: #fd950e;
+    transition: background .50s;
+}
+#btnSub:focus{
+    background-color: rgba(245, 239, 239, 0.808);
+    color: #fd950e;
+    transition: background .50s;
+}
+#btnMul:focus{
+    background-color: rgba(245, 239, 239, 0.808);
+    color: #fd950e;
+    transition: background .50s;
+}
+#btnSoma:focus{
+    background-color: rgba(245, 239, 239, 0.808);
+    color: #fd950e;
+    transition: background .50s;
+}
+#btnIgual:hover{
+    background-color: rgba(245, 134, 7, 0.26);
+    transition: background .50s;
+}
+
+#btnNegative:hover{
+    background-color:rgba(212, 208, 208, 0.514);
+    transition: background .50s;
+}
+#btnPercentage:hover{
+    background-color:rgba(212, 208, 208, 0.514);
+    transition: background .50s;
+}
+#btnDiv:hover{
+    background-color:rgba(233, 197, 149, 0.87);
+    transition: background .50s;
+}
+#btnMul:hover{
+    background-color:rgba(233, 197, 149, 0.87);
+    transition: background .50s;
+}
+#btnSub:hover{
+    background-color:rgba(233, 197, 149, 0.87);
+    transition: background .50s;
+}
+#btnSoma:hover{
+    background-color:rgba(233, 197, 149, 0.87);
+    transition: background .50s;
+}
+
+#btn0{
+    width: 160px;
+    border-radius: 50px;
+    padding-right: 70px;
+}
+
+.row2 :hover{
+    background-color:rgba(212, 208, 208, 0.514);
+    transition: background .50s;
+}
+.row3 :hover{
+    background-color:rgba(212, 208, 208, 0.514);
+    transition: background .50s;
+}
+.row4 :hover{
+    background-color:rgba(212, 208, 208, 0.514);
+    transition: background .50s;
+}
+.row5 :hover{
+    background-color:rgba(212, 208, 208, 0.514);
+    transition: background .50s;
+}
+
+.botao{
+    background-color: #9d9b9e;
+    outline-color: white;
+}

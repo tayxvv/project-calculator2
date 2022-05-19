@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+  </head>
+  <body onload="inicialize_pagina();">
+    <div class="mainApp">
+      <div class="calculator">
+        <form>
+          <input id="display" style="text-align: right" type="text" value="0" />
+        </form>
+        <div class="row1">
+          <input
+            id="btnClear"
+            type="button"
+            value="AC"
+            onclick="btnClick(this);"
+          />
+          <input
+            id="btnNegative"
+            type="button"
+            value="+/-"
+            onclick="btnClick(this);"
+          />
+          <input
+            id="btnPercentage"
+            type="button"
+            value="%"
+            onclick="btnClick(this);"
+          />
+          <input
+            class="botao"
+            id="btnDiv"
+            type="button"
+            value="÷"
+            onclick="btnClick(this);"
+          />
+        </div>
+        <div class="row2">
+          <input id="btn7" type="button" value="7" onclick="btnClick(this);" />
+          <input id="btn8" type="button" value="8" onclick="btnClick(this);" />
+          <input id="btn9" type="button" value="9" onclick="btnClick(this);" />
+          <input
+            class="botao"
+            id="btnMul"
+            type="button"
+            value="*"
+            onclick="btnClick(this);"
+          />
+        </div>
+        <div class="row3">
+          <input id="btn4" type="button" value="4" onclick="btnClick(this);" />
+          <input id="btn5" type="button" value="5" onclick="btnClick(this);" />
+          <input id="btn6" type="button" value="6" onclick="btnClick(this);" />
+          <input
+            class="botao"
+            id="btnSub"
+            type="button"
+            value="-"
+            onclick="btnClick(this);"
+          />
+        </div>
+        <div class="row4">
+          <input id="btn1" type="button" value="1" onclick="btnClick(this);" />
+          <input id="btn2" type="button" value="2" onclick="btnClick(this);" />
+          <input id="btn3" type="button" value="3" onclick="btnClick(this);" />
+          <input
+            class="botao"
+            id="btnSoma"
+            type="button"
+            value="+"
+            onclick="btnClick(this);"
+          />
+        </div>
+        <div class="row5">
+          <input id="btn0" type="button" value="0" onclick="btnClick(this);" />
+          <input
+            id="btnPonto"
+            type="button"
+            value="."
+            onclick="btnClick(this);"
+          />
+          <input
+            id="btnIgual"
+            type="button"
+            value="="
+            onclick="btnClick(this);"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
